@@ -1,0 +1,38 @@
+## 3. 
+Pedir que el usuario ingrese (input) nombre de personas y mostrarlos hasta que el valor de lo que ingresa sea “fin”
+
+## inicializamos lista para almacenar los nombres
+nombres = []
+## bucle para pedir nombres al usuario
+
+while True:
+    nombre = input("Ingrese el nombre de una persona o FIN para terminar: ")
+
+    if nombre.lower() == "fin":
+        break ## salir del bucle si el usuario ingresa fin
+
+    nombres.append(nombre) ## agrergamos el nombre a la lista
+## mostar nombres ingresados
+print("\nNombres Ingresdados: ")
+for nombre in nombres:
+    print(nombre)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 2. 
+## Mostrar sólo los números pares desde 0 hasta el número ingresado (input). Nota: para saber si un número es par hacer i % 2 == 0)
+
+numero_entero = int(input("Ingrese un numero entero positivo: "))
+
+## verificar si el numero ingresado es positivo
+if numero_entero < 0:
+    print("El numero ingresado no es positivo.")
+else:
+## mostrar los numeros pares desde 0 hasta el numero ingrasdo
+    print(f"Numeros paresad desde 0 hasta {numero_entero}: ")
+## Si el número es positivo, usamos un bucle for para iterar desde 0 hasta el número ingresado (incluyendo el número ingresado, por eso usamos range(0, numero + 1)).
+    for i in range (0, numero_entero+1):
+        if i % 2 == 0:
+            ## Dentro del bucle, usamos if i % 2 == 0 para verificar si i es par. Si lo es, lo imprimimos.
+            print(i)
+
