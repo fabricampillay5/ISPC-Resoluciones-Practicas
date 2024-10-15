@@ -1,1 +1,7 @@
+importe = float(input("Ingrese el valor de su importe: "))
+
+if importe > 10000:
+    print("Debe registrar su Dni")
+
+print("Gracias por su compra.")
 
