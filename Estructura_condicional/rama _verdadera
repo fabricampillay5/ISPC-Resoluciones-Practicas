@@ -1,7 +1,7 @@
 importe = float(input("Ingrese el valor de su importe: "))
 
 if importe > 10000:
-    print("Debe registrar su Dni")
+    print("Debe registrar su Dni") # solo se ejecuta esta linea si se cumple la condicion logica verdadera
 
 print("Gracias por su compra.")
 
