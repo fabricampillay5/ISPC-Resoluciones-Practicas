@@ -1,0 +1,17 @@
+"""
+prestamo de un banco:
+verificar la edad de la persona y definir si es posible otorgarle un prestamo:
+condiciones de otorgamiento:
+A) Sea mayor de edad
+B) Sea menor de 65 años
+
+en caso contrario no es posible otorgarle el credito
+"""
+
+edad = int(input("Ingrese la edad de la persona: "))
+
+if edad >= 18 and edad < 65:
+     print("!Felicidades se le ha otorgado el credito.¡")
+
+else:
+    print("No es posible otorgar el credito.")
